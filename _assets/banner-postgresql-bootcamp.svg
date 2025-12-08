@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <!-- Background -->
+  <rect width="1200" height="300" fill="#0d1117"/>
+  
+  <!-- Decorative elements -->
+  <rect x="0" y="0" width="8" height="300" fill="#336791"/>
+  <rect x="0" y="292" width="1200" height="8" fill="#336791"/>
+  
+  <!-- PostgreSQL Elephant Icon (simplified) -->
+  <g transform="translate(80, 70)">
+    <!-- Elephant body -->
+    <ellipse cx="80" cy="80" rx="70" ry="60" fill="#336791"/>
+    <!-- Elephant head -->
+    <circle cx="140" cy="50" r="45" fill="#336791"/>
+    <!-- Trunk -->
+    <path d="M175 60 Q200 80 195 120 Q190 140 175 145" stroke="#336791" stroke-width="20" fill="none" stroke-linecap="round"/>
+    <!-- Ear -->
+    <ellipse cx="105" cy="35" rx="25" ry="30" fill="#4a9fff"/>
+    <!-- Eye -->
+    <circle cx="150" cy="45" r="8" fill="#0d1117"/>
+    <circle cx="152" cy="43" r="3" fill="#eaeaea"/>
+    <!-- Tusk -->
+    <path d="M160 75 Q175 85 170 100" stroke="#eaeaea" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- Legs -->
+    <rect x="30" y="120" width="20" height="40" rx="8" fill="#336791"/>
+    <rect x="60" y="120" width="20" height="40" rx="8" fill="#336791"/>
+    <rect x="100" y="120" width="20" height="40" rx="8" fill="#336791"/>
+    <rect x="130" y="120" width="20" height="40" rx="8" fill="#336791"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="320" y="120" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="56" font-weight="700" fill="#eaeaea">
+    Bootcamp PostgreSQL
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="320" y="170" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="28" font-weight="400" fill="#8b949e">
+    Zero to Hero en 14 semanas
+  </text>
+  
+  <!-- Tags -->
+  <g transform="translate(320, 200)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="80" height="32" rx="6" fill="#336791"/>
+    <text x="40" y="22" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="500" fill="#eaeaea" text-anchor="middle">SQL</text>
+    
+    <!-- Tag 2 -->
+    <rect x="95" y="0" width="120" height="32" rx="6" fill="#1a1a2e"/>
+    <text x="155" y="22" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="500" fill="#4a9fff" text-anchor="middle">56 horas</text>
+    
+    <!-- Tag 3 -->
+    <rect x="230" y="0" width="140" height="32" rx="6" fill="#1a1a2e"/>
+    <text x="300" y="22" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="500" fill="#4a9fff" text-anchor="middle">Principiantes</text>
+    
+    <!-- Tag 4 -->
+    <rect x="385" y="0" width="100" height="32" rx="6" fill="#1a1a2e"/>
+    <text x="435" y="22" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="500" fill="#4a9fff" text-anchor="middle">Práctico</text>
+  </g>
+  
+  <!-- Version badge -->
+  <g transform="translate(1050, 30)">
+    <rect x="0" y="0" width="120" height="36" rx="6" fill="#336791"/>
+    <text x="60" y="24" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#eaeaea" text-anchor="middle">PostgreSQL 18</text>
+  </g>
+  
+  <!-- Decorative code snippet -->
+  <g transform="translate(920, 140)">
+    <text font-family="monospace, Consolas" font-size="13" fill="#8b949e">
+      <tspan x="0" y="0">SELECT * FROM</tspan>
+      <tspan x="0" y="20" fill="#4a9fff">conocimiento</tspan>
+      <tspan x="0" y="40">WHERE nivel = </tspan>
+      <tspan fill="#336791">'hero'</tspan>
+      <tspan x="0" y="60">;</tspan>
+    </text>
+  </g>
+</svg>

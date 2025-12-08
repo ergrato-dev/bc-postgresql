@@ -1,0 +1,77 @@
+# ============================================
+# Bootcamp PostgreSQL - Docker Compose
+# ============================================
+# Imagen Alpine: liviana (~80MB vs ~400MB de la imagen completa)
+# PostgreSQL 18 - Última versión estable
+# ============================================
+
+services:
+  postgres:
+    image: postgres:18-alpine
+    container_name: postgres-bootcamp
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: bootcamp
+      POSTGRES_PASSWORD: bootcamp123
+      POSTGRES_DB: tienda_online
+      # Configuración regional en español
+      LANG: es_ES.UTF-8
+      LC_ALL: es_ES.UTF-8
+    volumes:
+      # Persistencia de datos
+      - postgres_data:/var/lib/postgresql/data
+      # Scripts de inicialización (se ejecutan al crear el contenedor)
+      - ./_scripts/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bootcamp -d tienda_online"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # pgAdmin - Interfaz web para administrar PostgreSQL (opcional)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin-bootcamp
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@bootcamp.local
+      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      postgres:
+        condition: service_healthy
+    profiles:
+      - tools
+
+volumes:
+  postgres_data:
+    name: bootcamp-postgres-data
+  pgadmin_data:
+    name: bootcamp-pgadmin-data
+# ============================================
+# Comandos útiles:
+# ============================================
+# Iniciar solo PostgreSQL:
+#   docker compose up -d
+#
+# Iniciar PostgreSQL + pgAdmin:
+#   docker compose --profile tools up -d
+#
+# Conectar a PostgreSQL:
+#   docker exec -it postgres-bootcamp psql -U bootcamp -d tienda_online
+#
+# Ver logs:
+#   docker compose logs -f postgres
+#
+# Detener todo:
+#   docker compose down
+#
+# Eliminar datos (reset completo):
+#   docker compose down -v
+# ============================================

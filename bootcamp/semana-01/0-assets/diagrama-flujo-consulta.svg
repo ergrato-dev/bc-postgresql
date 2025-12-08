@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <!-- Background -->
+  <rect width="900" height="200" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="system-ui, Arial, sans-serif" font-size="20" font-weight="700" fill="#eaeaea" text-anchor="middle">
+    Flujo de una Consulta SQL
+  </text>
+  
+  <!-- Step 1: Client -->
+  <g transform="translate(30, 60)">
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="#1a1a2e" stroke="#336791" stroke-width="2"/>
+    <text x="60" y="30" font-family="system-ui, Arial, sans-serif" font-size="12" font-weight="600" fill="#4a9fff" text-anchor="middle">1. Cliente</text>
+    <text x="60" y="55" font-family="monospace" font-size="10" fill="#eaeaea" text-anchor="middle">SELECT *</text>
+    <text x="60" y="70" font-family="monospace" font-size="10" fill="#eaeaea" text-anchor="middle">FROM users</text>
+    <text x="60" y="90" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Envía consulta</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <g transform="translate(155, 105)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#336791" stroke-width="2"/>
+    <polygon points="40,0 30,-6 30,6" fill="#336791"/>
+  </g>
+  
+  <!-- Step 2: Parser -->
+  <g transform="translate(200, 60)">
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="#1a1a2e" stroke="#336791" stroke-width="2"/>
+    <text x="60" y="30" font-family="system-ui, Arial, sans-serif" font-size="12" font-weight="600" fill="#4a9fff" text-anchor="middle">2. Parser</text>
+    <text x="60" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#eaeaea" text-anchor="middle">Análisis</text>
+    <text x="60" y="70" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#eaeaea" text-anchor="middle">sintáctico</text>
+    <text x="60" y="90" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Valida SQL</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <g transform="translate(325, 105)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#336791" stroke-width="2"/>
+    <polygon points="40,0 30,-6 30,6" fill="#336791"/>
+  </g>
+  
+  <!-- Step 3: Planner -->
+  <g transform="translate(370, 60)">
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="#1a1a2e" stroke="#336791" stroke-width="2"/>
+    <text x="60" y="30" font-family="system-ui, Arial, sans-serif" font-size="12" font-weight="600" fill="#4a9fff" text-anchor="middle">3. Planner</text>
+    <text x="60" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#eaeaea" text-anchor="middle">Plan de</text>
+    <text x="60" y="70" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#eaeaea" text-anchor="middle">ejecución</text>
+    <text x="60" y="90" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Optimiza ruta</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <g transform="translate(495, 105)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#336791" stroke-width="2"/>
+    <polygon points="40,0 30,-6 30,6" fill="#336791"/>
+  </g>
+  
+  <!-- Step 4: Executor -->
+  <g transform="translate(540, 60)">
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="#336791"/>
+    <text x="60" y="30" font-family="system-ui, Arial, sans-serif" font-size="12" font-weight="600" fill="#eaeaea" text-anchor="middle">4. Executor</text>
+    <text x="60" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#eaeaea" text-anchor="middle">Ejecuta el</text>
+    <text x="60" y="70" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#eaeaea" text-anchor="middle">plan</text>
+    <text x="60" y="90" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#c9d1d9" text-anchor="middle">Accede a datos</text>
+  </g>
+  
+  <!-- Arrow 4 -->
+  <g transform="translate(665, 105)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#336791" stroke-width="2"/>
+    <polygon points="40,0 30,-6 30,6" fill="#336791"/>
+  </g>
+  
+  <!-- Step 5: Result -->
+  <g transform="translate(710, 60)">
+    <rect x="0" y="0" width="140" height="100" rx="8" fill="#1a1a2e" stroke="#4a9fff" stroke-width="2"/>
+    <text x="70" y="30" font-family="system-ui, Arial, sans-serif" font-size="12" font-weight="600" fill="#4a9fff" text-anchor="middle">5. Resultado</text>
+    <text x="70" y="55" font-family="monospace" font-size="9" fill="#eaeaea" text-anchor="middle">id | nombre</text>
+    <text x="70" y="70" font-family="monospace" font-size="9" fill="#eaeaea" text-anchor="middle">1  | María</text>
+    <text x="70" y="85" font-family="monospace" font-size="9" fill="#eaeaea" text-anchor="middle">2  | Carlos</text>
+  </g>
+  
+  <!-- Bottom info -->
+  <text x="450" y="185" font-family="system-ui, Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">
+    Todo este proceso ocurre en milisegundos para consultas simples
+  </text>
+</svg>
