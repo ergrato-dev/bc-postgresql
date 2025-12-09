@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <defs>
+    <style>
+      .title { font: bold 24px system-ui, sans-serif; fill: #eaeaea; }
+      .subtitle { font: 14px system-ui, sans-serif; fill: #a0a0a0; }
+      .crud-text { font: bold 20px system-ui, sans-serif; fill: #ffffff; }
+      .sql-text { font: bold 16px system-ui, sans-serif; fill: #79c0ff; }
+      .desc-text { font: 13px system-ui, sans-serif; fill: #c0c0c0; }
+      .letter { font: bold 36px system-ui, sans-serif; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="450" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" class="title">Ciclo CRUD</text>
+  <text x="450" y="65" text-anchor="middle" class="subtitle">Las 4 operaciones fundamentales de datos</text>
+  
+  <!-- Central circle -->
+  <circle cx="450" cy="250" r="80" fill="#21262d" stroke="#336791" stroke-width="3"/>
+  <text x="450" y="245" text-anchor="middle" class="crud-text">CRUD</text>
+  <text x="450" y="270" text-anchor="middle" class="desc-text">Operaciones</text>
+  
+  <!-- CREATE - Top -->
+  <circle cx="450" cy="100" r="50" fill="#238636"/>
+  <text x="450" y="95" text-anchor="middle" class="letter" fill="#ffffff">C</text>
+  <text x="450" y="118" text-anchor="middle" fill="#ffffff" style="font: 12px system-ui">CREATE</text>
+  <line x1="450" y1="150" x2="450" y2="170" stroke="#238636" stroke-width="2"/>
+  <text x="560" y="105" class="sql-text">INSERT</text>
+  <text x="560" y="125" class="desc-text">Crear nuevos registros</text>
+  
+  <!-- READ - Right -->
+  <circle cx="600" cy="250" r="50" fill="#8957e5"/>
+  <text x="600" y="245" text-anchor="middle" class="letter" fill="#ffffff">R</text>
+  <text x="600" y="268" text-anchor="middle" fill="#ffffff" style="font: 12px system-ui">READ</text>
+  <line x1="550" y1="250" x2="530" y2="250" stroke="#8957e5" stroke-width="2"/>
+  <text x="720" y="245" class="sql-text">SELECT</text>
+  <text x="720" y="265" class="desc-text">Leer/Consultar datos</text>
+  
+  <!-- UPDATE - Bottom -->
+  <circle cx="450" cy="400" r="50" fill="#1f6feb"/>
+  <text x="450" y="395" text-anchor="middle" class="letter" fill="#ffffff">U</text>
+  <text x="450" y="418" text-anchor="middle" fill="#ffffff" style="font: 12px system-ui">UPDATE</text>
+  <line x1="450" y1="350" x2="450" y2="330" stroke="#1f6feb" stroke-width="2"/>
+  <text x="560" y="395" class="sql-text">UPDATE</text>
+  <text x="560" y="415" class="desc-text">Modificar registros</text>
+  
+  <!-- DELETE - Left -->
+  <circle cx="300" cy="250" r="50" fill="#da3633"/>
+  <text x="300" y="245" text-anchor="middle" class="letter" fill="#ffffff">D</text>
+  <text x="300" y="268" text-anchor="middle" fill="#ffffff" style="font: 12px system-ui">DELETE</text>
+  <line x1="350" y1="250" x2="370" y2="250" stroke="#da3633" stroke-width="2"/>
+  <text x="100" y="245" class="sql-text">DELETE</text>
+  <text x="100" y="265" class="desc-text">Eliminar registros</text>
+  
+  <!-- Connecting arcs -->
+  <path d="M485 115 A120 120 0 0 1 585 215" stroke="#30363d" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <path d="M585 285 A120 120 0 0 1 485 385" stroke="#30363d" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <path d="M415 385 A120 120 0 0 1 315 285" stroke="#30363d" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <path d="M315 215 A120 120 0 0 1 415 115" stroke="#30363d" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  
+  <!-- PostgreSQL -->
+  <text x="850" y="435" text-anchor="end" class="subtitle">🐘 PostgreSQL 18</text>
+</svg>

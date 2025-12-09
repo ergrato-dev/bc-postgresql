@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <style>
+      .title { font: bold 24px system-ui, sans-serif; fill: #eaeaea; }
+      .subtitle { font: 14px system-ui, sans-serif; fill: #a0a0a0; }
+      .cmd-text { font: bold 18px system-ui, sans-serif; fill: #ffffff; }
+      .desc-text { font: 13px system-ui, sans-serif; fill: #c0c0c0; }
+      .icon-text { font: bold 28px system-ui, sans-serif; fill: #ffffff; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="400" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" class="title">Comandos DML - Data Manipulation Language</text>
+  <text x="450" y="70" text-anchor="middle" class="subtitle">Manipulación de datos en PostgreSQL</text>
+  
+  <!-- INSERT -->
+  <rect x="50" y="100" width="180" height="120" rx="12" fill="#238636"/>
+  <text x="140" y="145" text-anchor="middle" class="icon-text">➕</text>
+  <text x="140" y="175" text-anchor="middle" class="cmd-text">INSERT</text>
+  <text x="140" y="200" text-anchor="middle" class="desc-text">Agregar filas</text>
+  
+  <!-- UPDATE -->
+  <rect x="260" y="100" width="180" height="120" rx="12" fill="#1f6feb"/>
+  <text x="350" y="145" text-anchor="middle" class="icon-text">✏️</text>
+  <text x="350" y="175" text-anchor="middle" class="cmd-text">UPDATE</text>
+  <text x="350" y="200" text-anchor="middle" class="desc-text">Modificar filas</text>
+  
+  <!-- DELETE -->
+  <rect x="470" y="100" width="180" height="120" rx="12" fill="#da3633"/>
+  <text x="560" y="145" text-anchor="middle" class="icon-text">🗑️</text>
+  <text x="560" y="175" text-anchor="middle" class="cmd-text">DELETE</text>
+  <text x="560" y="200" text-anchor="middle" class="desc-text">Eliminar filas</text>
+  
+  <!-- SELECT -->
+  <rect x="680" y="100" width="180" height="120" rx="12" fill="#8957e5"/>
+  <text x="770" y="145" text-anchor="middle" class="icon-text">🔍</text>
+  <text x="770" y="175" text-anchor="middle" class="cmd-text">SELECT</text>
+  <text x="770" y="200" text-anchor="middle" class="desc-text">Consultar filas</text>
+  
+  <!-- Arrows pointing to table -->
+  <path d="M140 220 L140 260 L450 260" stroke="#238636" stroke-width="2" fill="none" marker-end="url(#arrow-green)"/>
+  <path d="M350 220 L350 280 L450 280" stroke="#1f6feb" stroke-width="2" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M560 220 L560 280 L510 280" stroke="#da3633" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M770 220 L770 260 L510 260" stroke="#8957e5" stroke-width="2" fill="none" marker-end="url(#arrow-purple)"/>
+  
+  <!-- Table representation -->
+  <rect x="350" y="290" width="200" height="90" rx="8" fill="#21262d" stroke="#30363d" stroke-width="2"/>
+  <text x="450" y="320" text-anchor="middle" class="cmd-text">📋 TABLA</text>
+  <text x="450" y="345" text-anchor="middle" class="desc-text">Filas de datos</text>
+  <text x="450" y="368" text-anchor="middle" class="desc-text">(rows)</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#238636"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1f6feb"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M9,0 L9,6 L0,3 z" fill="#da3633"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M9,0 L9,6 L0,3 z" fill="#8957e5"/>
+    </marker>
+  </defs>
+  
+  <!-- PostgreSQL logo hint -->
+  <text x="850" y="385" text-anchor="end" class="subtitle">🐘 PostgreSQL 18</text>
+</svg>
