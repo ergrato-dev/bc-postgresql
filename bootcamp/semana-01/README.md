@@ -1,7 +1,7 @@
 # 📘 Semana 01: Introducción a Bases de Datos y PostgreSQL
 
 <p align="center">
-  <img src="0-assets/diagrama-arquitectura-cliente-servidor.svg" alt="Arquitectura Cliente-Servidor" width="100%">
+  <img src="0-assets/01-diagrama-arquitectura-cliente-servidor.svg" alt="Arquitectura Cliente-Servidor" width="100%">
 </p>
 
 ---

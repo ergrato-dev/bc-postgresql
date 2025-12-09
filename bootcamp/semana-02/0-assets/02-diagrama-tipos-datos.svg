@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <!-- Background -->
+  <rect width="900" height="450" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="system-ui, Arial, sans-serif" font-size="22" font-weight="700" fill="#eaeaea" text-anchor="middle">
+    Tipos de Datos en PostgreSQL
+  </text>
+  
+  <!-- Numeric Types -->
+  <g transform="translate(30, 60)">
+    <rect x="0" y="0" width="200" height="170" rx="8" fill="#1a1a2e" stroke="#336791" stroke-width="2"/>
+    <text x="100" y="28" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#336791" text-anchor="middle">🔢 Numéricos</text>
+    
+    <text x="15" y="55" font-family="monospace" font-size="11" fill="#4a9fff">SMALLINT</text>
+    <text x="110" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">-32,768 a 32,767</text>
+    
+    <text x="15" y="75" font-family="monospace" font-size="11" fill="#4a9fff">INTEGER</text>
+    <text x="110" y="75" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">±2.1 billones</text>
+    
+    <text x="15" y="95" font-family="monospace" font-size="11" fill="#4a9fff">BIGINT</text>
+    <text x="110" y="95" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">±9.2 quintillones</text>
+    
+    <text x="15" y="115" font-family="monospace" font-size="11" fill="#4a9fff">DECIMAL(p,s)</text>
+    <text x="110" y="115" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Precisión exacta</text>
+    
+    <text x="15" y="135" font-family="monospace" font-size="11" fill="#4a9fff">REAL</text>
+    <text x="110" y="135" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">6 decimales</text>
+    
+    <text x="15" y="155" font-family="monospace" font-size="11" fill="#4a9fff">SERIAL</text>
+    <text x="110" y="155" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Auto-incremento</text>
+  </g>
+  
+  <!-- Text Types -->
+  <g transform="translate(250, 60)">
+    <rect x="0" y="0" width="200" height="170" rx="8" fill="#1a1a2e" stroke="#336791" stroke-width="2"/>
+    <text x="100" y="28" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#336791" text-anchor="middle">📝 Texto</text>
+    
+    <text x="15" y="55" font-family="monospace" font-size="11" fill="#4a9fff">CHAR(n)</text>
+    <text x="110" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Longitud fija</text>
+    
+    <text x="15" y="80" font-family="monospace" font-size="11" fill="#4a9fff">VARCHAR(n)</text>
+    <text x="110" y="80" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Hasta n caracteres</text>
+    
+    <text x="15" y="105" font-family="monospace" font-size="11" fill="#4a9fff">TEXT</text>
+    <text x="110" y="105" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Sin límite</text>
+    
+    <text x="15" y="140" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">💡 VARCHAR y TEXT</text>
+    <text x="15" y="155" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">tienen igual rendimiento</text>
+  </g>
+  
+  <!-- Date/Time Types -->
+  <g transform="translate(470, 60)">
+    <rect x="0" y="0" width="200" height="170" rx="8" fill="#1a1a2e" stroke="#336791" stroke-width="2"/>
+    <text x="100" y="28" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#336791" text-anchor="middle">📅 Fecha/Hora</text>
+    
+    <text x="15" y="55" font-family="monospace" font-size="11" fill="#4a9fff">DATE</text>
+    <text x="110" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Solo fecha</text>
+    
+    <text x="15" y="75" font-family="monospace" font-size="11" fill="#4a9fff">TIME</text>
+    <text x="110" y="75" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Solo hora</text>
+    
+    <text x="15" y="95" font-family="monospace" font-size="11" fill="#4a9fff">TIMESTAMP</text>
+    <text x="110" y="95" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Fecha + hora</text>
+    
+    <text x="15" y="115" font-family="monospace" font-size="11" fill="#4a9fff">TIMESTAMPTZ</text>
+    <text x="110" y="115" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Con zona horaria</text>
+    
+    <text x="15" y="135" font-family="monospace" font-size="11" fill="#4a9fff">INTERVAL</text>
+    <text x="110" y="135" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Duración</text>
+  </g>
+  
+  <!-- Boolean & Binary -->
+  <g transform="translate(690, 60)">
+    <rect x="0" y="0" width="180" height="170" rx="8" fill="#1a1a2e" stroke="#336791" stroke-width="2"/>
+    <text x="90" y="28" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#336791" text-anchor="middle">✓ Booleano/Binario</text>
+    
+    <text x="15" y="55" font-family="monospace" font-size="11" fill="#4a9fff">BOOLEAN</text>
+    <text x="100" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">true/false</text>
+    
+    <text x="15" y="80" font-family="monospace" font-size="11" fill="#4a9fff">BYTEA</text>
+    <text x="100" y="80" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Datos binarios</text>
+    
+    <text x="15" y="115" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Valores válidos:</text>
+    <text x="15" y="130" font-family="monospace" font-size="10" fill="#eaeaea">TRUE, 't', 'yes', '1'</text>
+    <text x="15" y="145" font-family="monospace" font-size="10" fill="#eaeaea">FALSE, 'f', 'no', '0'</text>
+  </g>
+  
+  <!-- Special Types -->
+  <g transform="translate(30, 250)">
+    <rect x="0" y="0" width="260" height="170" rx="8" fill="#1a1a2e" stroke="#4a9fff" stroke-width="2"/>
+    <text x="130" y="28" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#4a9fff" text-anchor="middle">⭐ Tipos Especiales</text>
+    
+    <text x="15" y="55" font-family="monospace" font-size="11" fill="#4a9fff">UUID</text>
+    <text x="80" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Identificador universal único</text>
+    
+    <text x="15" y="75" font-family="monospace" font-size="11" fill="#4a9fff">JSON</text>
+    <text x="80" y="75" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Datos JSON (texto)</text>
+    
+    <text x="15" y="95" font-family="monospace" font-size="11" fill="#4a9fff">JSONB</text>
+    <text x="80" y="95" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">JSON binario (indexable)</text>
+    
+    <text x="15" y="115" font-family="monospace" font-size="11" fill="#4a9fff">ARRAY</text>
+    <text x="80" y="115" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Arreglos de cualquier tipo</text>
+    
+    <text x="15" y="135" font-family="monospace" font-size="11" fill="#4a9fff">ENUM</text>
+    <text x="80" y="135" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Valores enumerados</text>
+    
+    <text x="15" y="155" font-family="monospace" font-size="11" fill="#4a9fff">MONEY</text>
+    <text x="80" y="155" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Valores monetarios</text>
+  </g>
+  
+  <!-- Geometric Types -->
+  <g transform="translate(310, 250)">
+    <rect x="0" y="0" width="200" height="170" rx="8" fill="#1a1a2e" stroke="#4a9fff" stroke-width="2"/>
+    <text x="100" y="28" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#4a9fff" text-anchor="middle">📍 Geométricos</text>
+    
+    <text x="15" y="55" font-family="monospace" font-size="11" fill="#4a9fff">POINT</text>
+    <text x="80" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">(x, y)</text>
+    
+    <text x="15" y="75" font-family="monospace" font-size="11" fill="#4a9fff">LINE</text>
+    <text x="80" y="75" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Línea infinita</text>
+    
+    <text x="15" y="95" font-family="monospace" font-size="11" fill="#4a9fff">LSEG</text>
+    <text x="80" y="95" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Segmento de línea</text>
+    
+    <text x="15" y="115" font-family="monospace" font-size="11" fill="#4a9fff">BOX</text>
+    <text x="80" y="115" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Rectángulo</text>
+    
+    <text x="15" y="135" font-family="monospace" font-size="11" fill="#4a9fff">POLYGON</text>
+    <text x="80" y="135" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Polígono cerrado</text>
+    
+    <text x="15" y="155" font-family="monospace" font-size="11" fill="#4a9fff">CIRCLE</text>
+    <text x="80" y="155" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Círculo</text>
+  </g>
+  
+  <!-- Network Types -->
+  <g transform="translate(530, 250)">
+    <rect x="0" y="0" width="200" height="170" rx="8" fill="#1a1a2e" stroke="#4a9fff" stroke-width="2"/>
+    <text x="100" y="28" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#4a9fff" text-anchor="middle">🌐 Red</text>
+    
+    <text x="15" y="55" font-family="monospace" font-size="11" fill="#4a9fff">INET</text>
+    <text x="80" y="55" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">IPv4/IPv6</text>
+    
+    <text x="15" y="75" font-family="monospace" font-size="11" fill="#4a9fff">CIDR</text>
+    <text x="80" y="75" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Red IPv4/IPv6</text>
+    
+    <text x="15" y="95" font-family="monospace" font-size="11" fill="#4a9fff">MACADDR</text>
+    <text x="80" y="95" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Dirección MAC</text>
+    
+    <text x="15" y="130" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">Ejemplo:</text>
+    <text x="15" y="150" font-family="monospace" font-size="10" fill="#eaeaea">'192.168.1.0/24'</text>
+  </g>
+  
+  <!-- Tips -->
+  <g transform="translate(750, 250)">
+    <rect x="0" y="0" width="120" height="170" rx="8" fill="#336791"/>
+    <text x="60" y="28" font-family="system-ui, Arial, sans-serif" font-size="14" font-weight="600" fill="#eaeaea" text-anchor="middle">💡 Tips</text>
+    
+    <text x="10" y="55" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#eaeaea">• Usa BIGINT</text>
+    <text x="10" y="70" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#eaeaea">  para IDs</text>
+    
+    <text x="10" y="90" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#eaeaea">• Prefiere</text>
+    <text x="10" y="105" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#eaeaea">  TIMESTAMPTZ</text>
+    
+    <text x="10" y="125" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#eaeaea">• JSONB &gt; JSON</text>
+    
+    <text x="10" y="145" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#eaeaea">• TEXT para</text>
+    <text x="10" y="160" font-family="system-ui, Arial, sans-serif" font-size="9" fill="#eaeaea">  texto largo</text>
+  </g>
+</svg>

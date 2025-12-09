@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400">
+  <!-- Background -->
+  <rect width="900" height="400" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="system-ui, Arial, sans-serif" font-size="22" font-weight="700" fill="#eaeaea" text-anchor="middle">
+    Comandos DDL (Data Definition Language)
+  </text>
+  
+  <!-- CREATE -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="250" height="280" rx="10" fill="#1a1a2e" stroke="#336791" stroke-width="2"/>
+    <rect x="0" y="0" width="250" height="45" rx="10" fill="#336791"/>
+    <text x="125" y="30" font-family="system-ui, Arial, sans-serif" font-size="18" font-weight="700" fill="#eaeaea" text-anchor="middle">CREATE</text>
+    
+    <text x="20" y="70" font-family="system-ui, Arial, sans-serif" font-size="12" fill="#8b949e">Crear objetos nuevos</text>
+    
+    <text x="20" y="100" font-family="system-ui, Arial, sans-serif" font-size="11" fill="#4a9fff">Objetos:</text>
+    <text x="20" y="120" font-family="monospace" font-size="10" fill="#eaeaea">• DATABASE</text>
+    <text x="20" y="138" font-family="monospace" font-size="10" fill="#eaeaea">• TABLE</text>
+    <text x="20" y="156" font-family="monospace" font-size="10" fill="#eaeaea">• INDEX</text>
+    <text x="20" y="174" font-family="monospace" font-size="10" fill="#eaeaea">• VIEW</text>
+    <text x="20" y="192" font-family="monospace" font-size="10" fill="#eaeaea">• SCHEMA</text>
+    <text x="20" y="210" font-family="monospace" font-size="10" fill="#eaeaea">• SEQUENCE</text>
+    
+    <rect x="15" y="225" width="220" height="45" rx="4" fill="#2d2d44"/>
+    <text x="125" y="245" font-family="monospace" font-size="9" fill="#4a9fff" text-anchor="middle">CREATE TABLE usuarios (</text>
+    <text x="125" y="260" font-family="monospace" font-size="9" fill="#eaeaea" text-anchor="middle">id SERIAL PRIMARY KEY</text>
+    <text x="125" y="273" font-family="monospace" font-size="9" fill="#4a9fff" text-anchor="middle">);</text>
+  </g>
+  
+  <!-- ALTER -->
+  <g transform="translate(325, 70)">
+    <rect x="0" y="0" width="250" height="280" rx="10" fill="#1a1a2e" stroke="#4a9fff" stroke-width="2"/>
+    <rect x="0" y="0" width="250" height="45" rx="10" fill="#4a9fff"/>
+    <text x="125" y="30" font-family="system-ui, Arial, sans-serif" font-size="18" font-weight="700" fill="#0d1117" text-anchor="middle">ALTER</text>
+    
+    <text x="20" y="70" font-family="system-ui, Arial, sans-serif" font-size="12" fill="#8b949e">Modificar objetos existentes</text>
+    
+    <text x="20" y="100" font-family="system-ui, Arial, sans-serif" font-size="11" fill="#4a9fff">Acciones:</text>
+    <text x="20" y="120" font-family="monospace" font-size="10" fill="#eaeaea">• ADD COLUMN</text>
+    <text x="20" y="138" font-family="monospace" font-size="10" fill="#eaeaea">• DROP COLUMN</text>
+    <text x="20" y="156" font-family="monospace" font-size="10" fill="#eaeaea">• ALTER COLUMN</text>
+    <text x="20" y="174" font-family="monospace" font-size="10" fill="#eaeaea">• RENAME TO</text>
+    <text x="20" y="192" font-family="monospace" font-size="10" fill="#eaeaea">• SET DEFAULT</text>
+    <text x="20" y="210" font-family="monospace" font-size="10" fill="#eaeaea">• ADD CONSTRAINT</text>
+    
+    <rect x="15" y="225" width="220" height="45" rx="4" fill="#2d2d44"/>
+    <text x="125" y="245" font-family="monospace" font-size="9" fill="#4a9fff" text-anchor="middle">ALTER TABLE usuarios</text>
+    <text x="125" y="260" font-family="monospace" font-size="9" fill="#eaeaea" text-anchor="middle">ADD COLUMN email VARCHAR;</text>
+  </g>
+  
+  <!-- DROP -->
+  <g transform="translate(600, 70)">
+    <rect x="0" y="0" width="250" height="280" rx="10" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="2"/>
+    <rect x="0" y="0" width="250" height="45" rx="10" fill="#ff6b6b"/>
+    <text x="125" y="30" font-family="system-ui, Arial, sans-serif" font-size="18" font-weight="700" fill="#eaeaea" text-anchor="middle">DROP</text>
+    
+    <text x="20" y="70" font-family="system-ui, Arial, sans-serif" font-size="12" fill="#8b949e">Eliminar objetos</text>
+    
+    <text x="20" y="100" font-family="system-ui, Arial, sans-serif" font-size="11" fill="#ff6b6b">⚠️ Opciones:</text>
+    <text x="20" y="120" font-family="monospace" font-size="10" fill="#eaeaea">• IF EXISTS</text>
+    <text x="20" y="138" font-family="monospace" font-size="10" fill="#eaeaea">• CASCADE</text>
+    <text x="20" y="156" font-family="monospace" font-size="10" fill="#eaeaea">• RESTRICT</text>
+    
+    <text x="20" y="185" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#ff6b6b">⚠️ CUIDADO:</text>
+    <text x="20" y="200" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">DROP es irreversible</text>
+    <text x="20" y="215" font-family="system-ui, Arial, sans-serif" font-size="10" fill="#8b949e">CASCADE elimina dependencias</text>
+    
+    <rect x="15" y="225" width="220" height="45" rx="4" fill="#2d2d44"/>
+    <text x="125" y="245" font-family="monospace" font-size="9" fill="#ff6b6b" text-anchor="middle">DROP TABLE IF EXISTS</text>
+    <text x="125" y="260" font-family="monospace" font-size="9" fill="#eaeaea" text-anchor="middle">usuarios CASCADE;</text>
+  </g>
+  
+  <!-- Footer info -->
+  <g transform="translate(50, 365)">
+    <rect x="0" y="0" width="800" height="30" rx="6" fill="#2d2d44"/>
+    <text x="400" y="20" font-family="system-ui, Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">
+      💡 Los comandos DDL modifican la estructura de la base de datos, no los datos
+    </text>
+  </g>
+</svg>

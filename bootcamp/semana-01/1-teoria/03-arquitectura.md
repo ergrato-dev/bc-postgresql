@@ -10,7 +10,7 @@ Entender cómo funciona PostgreSQL internamente: su modelo cliente-servidor, pro
 
 PostgreSQL utiliza una arquitectura **cliente-servidor**:
 
-![Arquitectura Cliente-Servidor](../0-assets/diagrama-arquitectura-cliente-servidor.svg)
+![Arquitectura Cliente-Servidor](../0-assets/01-diagrama-arquitectura-cliente-servidor.svg)
 
 ### Cliente
 
@@ -98,7 +98,7 @@ $PGDATA/
 
 PostgreSQL organiza los datos en una jerarquía clara:
 
-![Jerarquía de Objetos](../0-assets/diagrama-jerarquia-objetos.svg)
+![Jerarquía de Objetos](../0-assets/02-diagrama-jerarquia-objetos.svg)
 
 ### Niveles
 
@@ -132,7 +132,7 @@ FROM productos;
 
 Cuando envías una consulta SQL, pasa por varias etapas:
 
-![Flujo de Consulta](../0-assets/diagrama-flujo-consulta.svg)
+![Flujo de Consulta](../0-assets/03-diagrama-flujo-consulta.svg)
 
 ### Etapas Detalladas
 
